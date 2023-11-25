@@ -135,7 +135,7 @@ export function Frustrar({ data, vipAccess }) {
                         <FrustrarProgressBar valorVariavel={newGamePercentage} quality={quality} />
                     </div>
                     <div className="game-info-container">
-                        <p className="game-info">O sistema da SPRIBE irá te identificar como um jogador “frustrado” e vai fazer com que suas chances de ganhar aumentem</p>
+                        <p className="game-info">O sistema irá identificar uma brecha no sistema e vai fazer com que suas chances de ganhar aumentem</p>
                         <div className="game-pay-reve">
                             <Stats
                                 title={'Pagamento'}
@@ -147,7 +147,7 @@ export function Frustrar({ data, vipAccess }) {
                             />
                         </div>
                     </div>
-                    <button className="frustrate-button" onClick={runFrustrar}>Frustrar Conta</button>
+                    <button className="frustrate-button" onClick={runFrustrar}>Identificar brecha no sistema</button>
                 </div>
                 {showTerminal && (
                     <Terminal house={data.houseName} supplier={data.supplierName} game={data.name} />
