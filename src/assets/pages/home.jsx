@@ -103,6 +103,9 @@ export function Home({ data, setSGame, selectedGame, setShowModal, currentHouse,
 
             {location.pathname === "/" && (
                 <section className='hSection'>
+                    <div className='pad'>
+                        <button className="class-button">Veja como utilizar o APP</button>
+                    </div>
                     <div className="miniSectionTitle marginSpacings">
                         <img src={chooseHouse} />
                         <p className='mainText'>Escolha a Casa de Apostas</p>
