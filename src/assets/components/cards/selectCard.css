@@ -82,6 +82,10 @@
     mix-blend-mode: screen;
     user-select: none;
 }
+.image.bet7k-image {
+    zoom: 0.6;
+    margin-top: 28px;
+}
 
 .image-blocked {
     filter: grayscale(1);

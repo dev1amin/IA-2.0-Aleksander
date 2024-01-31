@@ -7,10 +7,10 @@ import { render } from 'react-dom';
 
 export function HouseCard({ data, setShowModal, currentHouse, setCurrentHouse, vipAccess, currentSupplier, setCurrentSupplier }) {
 
-    const [InBrazza, setInBrazza] = useState(null);
+    const [Bet7K, setBet7K] = useState(null);
 
     useEffect(() => {
-    }, [InBrazza])
+    }, [Bet7K])
 
     function formatBigNumber(number) {
         if (number >= 1e6) {
@@ -52,31 +52,34 @@ export function HouseCard({ data, setShowModal, currentHouse, setCurrentHouse, v
 
     useEffect(() => {
         if (currentHouse != data.casino) {
-            setInBrazza(false)
+            setBet7K(false)
         } else {
-            setInBrazza(true)
+            setBet7K(true)
         }
     }, [currentHouse, currentSupplier])
 
     return (
         <>
             <div
-                className={InBrazza ? "houseCard selectCard card-enabled" : "houseCard selectCardBlocked card-enabled"}
+                className={Bet7K ? "houseCard selectCard card-enabled" : "houseCard selectCardBlocked card-enabled"}
                 onClick={handleCardClick}
             >
-                <div className={InBrazza ? "sc-content" : "sc-content-blocked"}>
-                    <img src={data.image} className={InBrazza ? "image" : "image-blocked"} />
-                    <div className={InBrazza ? "houseData" : "houseData lowopacity"}>
+                <div className={Bet7K ? "sc-content" : "sc-content-blocked"}>
+                    <img
+                        src={data.image}
+                        className={Bet7K ? "image bet7k-image" : "image-blocked"}
+                    />
+                    <div className={Bet7K ? "houseData" : "houseData lowopacity"}>
                         <Stats
                             title={'Pagamento'}
                             value={`R$ ${formatBigNumber(data.revenue * 0.2)}`}
                         />
-
+    
                         <Stats
                             title={'Faturamento'}
                             value={`R$ ${formatBigNumber(data.revenue)}`}
                         />
-
+    
                         <Stats
                             title={'Jogadores'}
                             value={formatBigNumber(data.players)}
@@ -84,7 +87,6 @@ export function HouseCard({ data, setShowModal, currentHouse, setCurrentHouse, v
                     </div>
                 </div>
             </div>
-
         </>
-    )
+    );
 }

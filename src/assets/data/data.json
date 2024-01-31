@@ -1,6 +1,6 @@
 [
   {
-    "casino": "InBrazza",
+    "casino": "Bet7K",
     "players": 12600000,
     "revenue": 48500000,
     "suppliers": [
@@ -9,22 +9,8 @@
       "Spribe",
       "Evoplay"
     ],
-    "image": "https://media.pl-01.cdn-platform.xyz/cms/sites/image-1691074832750233.webp",
-    "link": "https://affiliate.inbrazza.bet/visit/?bta=36398&brand=inbrazza"
-  },
-  {
-    "casino": "RealsBet",
-    "players": 1900000,
-    "revenue": 7220000,
-    "suppliers": [
-      "netgaming",
-      "pragmaticplay",
-      "Spribe",
-      "PG Soft",
-      "Evoplay"
-    ],
-    "image": "https://i.postimg.cc/sD9vK739/realsbet.webp",
-    "link": "https://afiliado.realsbet.com/visit/?bta=73073&brand=realsbet"
+    "image": "https://storage.bet7k.com/bet7k/images/1675781173_logo.svg",
+    "link": "https://go.aff.7k-partners.com/e3l8e66y"
   },
   {
     "casino": "Donald BET",
@@ -38,5 +24,19 @@
     ],
     "image": "https://i.postimg.cc/x1gFtDH9/Donald-Bet.png",
     "link": "https://go.aff.donald.bet/yluqqjvm"
-  } 
+  },
+  {
+    "casino": "DddBet",
+    "players": 1900000,
+    "revenue": 7220000,
+    "suppliers": [
+      "netgaming",
+      "pragmaticplay",
+      "Spribe",
+      "PG Soft",
+      "Evoplay"
+    ],
+    "image": "https://jogorio-images-prd.s3.sa-east-1.amazonaws.com/jogorio/1705302348dddh.png",
+    "link": "https://dddbet.com/#/home/index?invite_code=CY9SFJ"
+  }
 ]
