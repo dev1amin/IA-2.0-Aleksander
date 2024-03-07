@@ -24,33 +24,5 @@
     ],
     "image": "https://i.postimg.cc/x1gFtDH9/Donald-Bet.png",
     "link": "https://www.betfive.io/register?id=65e330ee052a4d0029d0545b"
-  },
-  {
-    "casino": "Ceo777",
-    "players": 1900000,
-    "revenue": 7220000,
-    "suppliers": [
-      "netgaming",
-      "pragmaticplay",
-      "Spribe",
-      "PG Soft",
-      "Evoplay"
-    ],
-    "image": "https://js.ceo777.me/siteadmin/upload/img/1755010490282520578.png",
-    "link": "https://ceo777.com/?id=40112499"
-  },
-  {
-    "casino": "Viu777",
-    "players": 1900000,
-    "revenue": 7220000,
-    "suppliers": [
-      "netgaming",
-      "pragmaticplay",
-      "Spribe",
-      "PG Soft",
-      "Evoplay"
-    ],
-    "image": "https://js.viu777.cc/siteadmin/upload/img/1755853038625439745.png",
-    "link": "https://viu777.co/?id=39251573"
   }
-]
+]src/assets/data/data.json
