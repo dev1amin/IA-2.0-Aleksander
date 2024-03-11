@@ -14,6 +14,13 @@
     margin: 20px 0px;
 }
 
+.hSection.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
 
 #enabledGames > h1 {
     font-size: 32px;

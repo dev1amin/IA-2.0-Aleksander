@@ -35,9 +35,9 @@ export function SupplierCard({data, setShowModal, currentHouse, currentSupplier,
     };
 
     return (
-        <div className={Spribe ? "supplierCard selectCard card-enabled" : "supplierCard selectCardBlocked card-enabled"} onClick={handleCardClick}>
-            <div className={Spribe ? "sc-content" : "sc-content-blocked"}>
-                <img src={data.image} className={Spribe ? "image" : "image-blocked"} />
+        <div className={Spribe ? "supplierCard selectCard card-enabled" : "supplierCard selectCar card-enabled"} onClick={handleCardClick}>
+            <div className={Spribe ? "sc-content" : "sc-content"}>
+                <img src={data.image} className={Spribe ? "image" : "image"} />
                 <div className={Spribe ? "houseData supp-houseD" : "houseData supp-houseD lowopacity"}>
 
                     <Stats title={'Pagamento'} value={`R$ ${formatBigNumber(data.payment)}`}/>

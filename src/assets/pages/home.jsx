@@ -133,79 +133,13 @@ export function Home({ data, setSGame, selectedGame, setShowModal, currentHouse,
                 </section>
             )}
 
-            {location.pathname === "/verberat" && (
-                <section className='hSection'>
-                    <div className="miniSectionTitle marginSpacings">
-                        <img src={chooseSupplier} />
-                        <p className='mainText'>Escolha o Fornecedor</p>
-                    </div>
-                    <Swiper
-                        slidesPerView={'auto'}
-                        centeredSlides={false}
-                        spaceBetween={16}
-                        className="mySwiper"
-                        onSwiper={(swiper) => setSupplierSwiper(swiper)}
-                    >
-                        {dataState.find((current) => current.casino === currentHouse).suppliers.map((current, index) => (
-                            <SwiperSlide key={index}>
-                                <div onClick={() => handleSupplierClick(current.name)}>
-                                    <SupplierCard
-                                        data={current}
-                                        currentHouse={currentHouse}
-                                        setShowModal={setShowModal}
-                                        currentSupplier={currentSupplier}
-                                        setCurrentSupplier={setCurrentSupplier}
-                                        vipAccess={vipAccess}
-                                    />
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </section>
-            )}
-
-            {location.pathname === "/" && (
-                <section className='hSection'>
-                    <div className="miniSectionTitle marginSpacings">
-                        <img src={chooseSupplier} />
-                        <p className='mainText'>Escolha o Fornecedor</p>
-                    </div>
-                    <Swiper
-                        slidesPerView={'auto'}
-                        centeredSlides={false}
-                        spaceBetween={16}
-                        className="mySwiper"
-                    >
-                        {dataState.find((current) => current.casino === currentHouse).suppliers.map((current, index) => (
-                            <SwiperSlide key={index}>
-                                    <SupplierCard
-                                        data={current}
-                                        currentHouse={currentHouse}
-                                        setShowModal={setShowModal}
-                                        currentSupplier={currentSupplier}
-                                        setCurrentSupplier={setCurrentSupplier}
-                                        vipAccess={vipAccess}
-                                    />
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </section>
-            )}
-
-            <div id="enabledGames" className='hSection'>
+            <div id="enabledGames" className='hSection flex'>
                 <h1 className='mainText'> Jogos Disponíveis </h1>
-                <Swiper
-                    slidesPerView={'auto'}
-                    centeredSlides={false}
-                    spaceBetween={16}
-                    className="mySwiper"
-                >
                     {dataState.find((current) => current.casino === currentHouse).suppliers.find((current) => current.name === currentSupplier).games.map((current, index) => (
                         <SwiperSlide key={index}>
                             <GameCard data={current} setSGame={setSGame} />
                         </SwiperSlide>
                     ))}
-                </Swiper>
             </div>
         </>
     );

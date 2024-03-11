@@ -17,3 +17,12 @@
 .marginSpacings {
   padding: 0 20px;
 }
+
+#root > section:nth-child(3) > div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper > div > div.swiper-slide.swiper-slide-next > div > div > img{
+  zoom: .5;
+  margin-top: 46px;
+}
+
+#root > section:nth-child(3) > div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper > div > div:nth-child(3) > div > div > img{
+  zoom: .9;
+}
